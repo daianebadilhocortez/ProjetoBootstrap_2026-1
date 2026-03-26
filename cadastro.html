@@ -33,22 +33,26 @@
 <div class="container-fluid" style="margin-top:70px; padding:20px;">
 
 <div class="panel panel-info">
-<div class="panel-heading">Cadastro de Processo Administrativo</div>
+<div class="panel-heading">Abertura de Processo Administrativo</div>
 <div class="panel-body">
-Registro de novos processos com definição de prioridade e controle de prazos.
+Preencha as informações para registrar um novo processo administrativo, definindo prioridade e prazo de análise.
 </div>
 </div>
+
+<div class="row">
+
+<div class="col-md-8">
 
 <form>
 
 <div class="form-group">
 <label>Unidade Responsável</label>
-<input type="text" class="form-control" placeholder="Ex: Secretaria de Administração">
+<input type="text" class="form-control" placeholder="Ex: Secretaria Municipal de Administração">
 </div>
 
 <div class="form-group">
 <label>Email Institucional</label>
-<input type="email" class="form-control" placeholder="email@orgao.gov.br">
+<input type="email" class="form-control" placeholder="contato@orgao.gov.br">
 </div>
 
 <div class="form-group">
@@ -57,8 +61,9 @@ Registro de novos processos com definição de prioridade e controle de prazos.
 <option>Selecione</option>
 <option>Licitação</option>
 <option>Convênio</option>
-<option>RH</option>
-<option>Compras</option>
+<option>Recursos Humanos</option>
+<option>Compras Públicas</option>
+<option>Administrativo Geral</option>
 </select>
 </div>
 
@@ -72,20 +77,56 @@ Registro de novos processos com definição de prioridade e controle de prazos.
 </div>
 
 <div class="form-group">
-<label>Descrição</label>
-<textarea class="form-control"></textarea>
+<label>Prazo (dias)</label>
+<input type="number" class="form-control" placeholder="Informe o prazo estimado">
 </div>
 
-<button class="btn btn-primary" data-toggle="modal" data-target="#modal">Registrar</button>
+<div class="form-group">
+<label>Descrição do Processo</label>
+<textarea class="form-control" rows="3" placeholder="Descreva o objeto, finalidade e situação inicial do processo"></textarea>
+</div>
+
+<button class="btn btn-primary" data-toggle="modal" data-target="#modal">
+Registrar Processo
+</button>
 
 </form>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="panel panel-default">
+<div class="panel-heading">Orientações</div>
+<div class="panel-body">
+Informe corretamente a unidade responsável.<br>
+Defina a prioridade conforme urgência administrativa.<br>
+Estabeleça prazos realistas para análise.<br>
+Revise os dados antes de registrar.
+</div>
+</div>
+
+<div class="panel panel-warning">
+<div class="panel-heading">Importante</div>
+<div class="panel-body">
+Processos com alta prioridade devem ter acompanhamento imediato.<br>
+Prazos devem seguir normas administrativas vigentes.
+</div>
+</div>
+
+</div>
+
+</div>
 
 </div>
 
 <div class="modal fade" id="modal">
 <div class="modal-dialog">
 <div class="modal-content">
-<div class="modal-body">Processo registrado com sucesso.</div>
+<div class="modal-header"><h4>Confirmação</h4></div>
+<div class="modal-body">
+Processo administrativo registrado com sucesso.
+</div>
 <div class="modal-footer">
 <button class="btn btn-success" data-dismiss="modal">OK</button>
 </div>
