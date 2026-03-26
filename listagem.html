@@ -1,7 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem</title>
-     <link href="bootstrap/" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Sistema Administrativo</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li class="active"><a href="listagem.html">Listagem</a></li>
+            <li><a href="dashboard.html">Painel</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Listagem</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>ana@email.com</td>
+                <td>
+                    <button class="btn btn-info" data-toggle="modal" data-target="#detalhes">Detalhes</button>
+                    <button class="btn btn-danger">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>joao@email.com</td>
+                <td>
+                    <button class="btn btn-info">Detalhes</button>
+                    <button class="btn btn-danger">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>maria@email.com</td>
+                <td>
+                    <button class="btn btn-info">Detalhes</button>
+                    <button class="btn btn-danger">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>carlos@email.com</td>
+                <td>
+                    <button class="btn btn-info">Detalhes</button>
+                    <button class="btn btn-danger">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>lucas@email.com</td>
+                <td>
+                    <button class="btn btn-info">Detalhes</button>
+                    <button class="btn btn-danger">Excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="detalhes">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Detalhes</h4>
+            </div>
+            <div class="modal-body">
+                Informações do registro
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
