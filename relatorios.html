@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Relatórios</title>
+<title>Relatórios Gerenciais</title>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
 <div class="container-fluid" style="margin-top:70px; padding:20px;">
 
 <div class="alert alert-info">
-Relatórios gerenciais dos processos administrativos.
+Relatórios gerenciais dos processos administrativos no setor público.
 </div>
 
 <div class="row">
@@ -41,28 +41,56 @@ Relatórios gerenciais dos processos administrativos.
 <div class="col-md-4">
 <div class="panel panel-primary">
 <div class="panel-heading">Total de Processos</div>
-<div class="panel-body">120</div>
+<div class="panel-body">120 processos registrados</div>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="panel panel-success">
-<div class="panel-heading">Concluídos</div>
-<div class="panel-body">35</div>
+<div class="panel-heading">Processos Concluídos</div>
+<div class="panel-body">35 finalizados</div>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="panel panel-danger">
-<div class="panel-heading">Em Atraso</div>
-<div class="panel-body">10</div>
+<div class="panel-heading">Processos em Atraso</div>
+<div class="panel-body">10 com prazo vencido</div>
+</div>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-heading">Distribuição por Tipo</div>
+<div class="panel-body">
+Licitação: 30 processos<br>
+Convênios: 20 processos<br>
+Recursos Humanos: 25 processos<br>
+Compras Públicas: 45 processos
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-heading">Controle de Prazo</div>
+<div class="panel-body">
+Dentro do prazo: 70<br>
+Próximo do vencimento: 20<br>
+Em atraso: 10<br><br>
+Tempo médio de tramitação: 7 dias
+</div>
 </div>
 </div>
 
 </div>
 
 <div class="panel panel-default">
-<div class="panel-heading">Relatório de Processos</div>
+<div class="panel-heading">Relatório Detalhado de Processos</div>
 <div class="panel-body">
 
 <table class="table table-hover table-bordered">
@@ -70,32 +98,48 @@ Relatórios gerenciais dos processos administrativos.
 <th>Data</th>
 <th>Tipo</th>
 <th>Prioridade</th>
-<th>Status</th>
+<th>Situação</th>
 </tr>
 
 <tr>
 <td>01/03/2026</td>
 <td>Licitação</td>
 <td><span class="label label-danger">Alta</span></td>
-<td>Em análise</td>
+<td>Em análise jurídica</td>
 </tr>
 
 <tr>
 <td>05/03/2026</td>
-<td>RH</td>
+<td>Convênio</td>
 <td><span class="label label-warning">Média</span></td>
-<td>Em andamento</td>
+<td>Aguardando assinatura</td>
 </tr>
 
 <tr>
 <td>10/03/2026</td>
-<td>Compras</td>
+<td>Recursos Humanos</td>
 <td><span class="label label-success">Baixa</span></td>
 <td>Concluído</td>
 </tr>
 
+<tr>
+<td>15/03/2026</td>
+<td>Compras Públicas</td>
+<td><span class="label label-danger">Alta</span></td>
+<td>Em análise técnica</td>
+</tr>
+
 </table>
 
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">Observações Administrativas</div>
+<div class="panel-body">
+Os processos classificados como alta prioridade demandam análise imediata.<br>
+Processos em atraso devem ser regularizados conforme normas administrativas.<br>
+Recomenda-se acompanhamento contínuo dos prazos estabelecidos.
 </div>
 </div>
 
