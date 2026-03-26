@@ -1,67 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Relatórios</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<title>Relatórios</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#menuTopo">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Sistema Administrativo</a>
-        </div>
+<div class="container-fluid">
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="collapse" data-target="#menuTopo">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">Gestão Pública</a>
+</div>
 
-        <div class="collapse navbar-collapse" id="menuTopo">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="listagem.html">Listagem</a></li>
-                <li><a href="dashboard.html">Painel</a></li>
-                <li class="active"><a href="relatorios.html">Relatórios</a></li>
-            </ul>
-        </div>
-    </div>
+<div class="collapse navbar-collapse" id="menuTopo">
+<ul class="nav navbar-nav">
+<li><a href="index.html">Início</a></li>
+<li><a href="cadastro.html">Novo Processo</a></li>
+<li><a href="listagem.html">Processos</a></li>
+<li><a href="dashboard.html">Painel</a></li>
+<li class="active"><a href="relatorios.html">Relatórios</a></li>
+</ul>
+</div>
+</div>
 </nav>
 
-<div class="container" style="margin-top:70px;">
+<div class="container-fluid" style="margin-top:70px; padding:20px;">
 
-    <h2>Relatórios</h2>
+<div class="alert alert-info">
+Relatórios gerenciais dos processos administrativos.
+</div>
 
-    <div class="panel panel-default">
-        <div class="panel-heading">Resumo</div>
-        <div class="panel-body">
-            Relatórios gerais do sistema.
-        </div>
-    </div>
+<div class="row">
 
-    <table class="table table-bordered table-hover">
-        <thead>
-            <tr>
-                <th>Data</th>
-                <th>Descrição</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>01/03/2026</td>
-                <td>Cadastro realizado</td>
-                <td>Concluído</td>
-            </tr>
-            <tr>
-                <td>05/03/2026</td>
-                <td>Atualização</td>
-                <td>Pendente</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="col-md-4">
+<div class="panel panel-primary">
+<div class="panel-heading">Total de Processos</div>
+<div class="panel-body">120</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="panel panel-success">
+<div class="panel-heading">Concluídos</div>
+<div class="panel-body">35</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="panel panel-danger">
+<div class="panel-heading">Em Atraso</div>
+<div class="panel-body">10</div>
+</div>
+</div>
+
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">Relatório de Processos</div>
+<div class="panel-body">
+
+<table class="table table-hover table-bordered">
+<tr>
+<th>Data</th>
+<th>Tipo</th>
+<th>Prioridade</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>01/03/2026</td>
+<td>Licitação</td>
+<td><span class="label label-danger">Alta</span></td>
+<td>Em análise</td>
+</tr>
+
+<tr>
+<td>05/03/2026</td>
+<td>RH</td>
+<td><span class="label label-warning">Média</span></td>
+<td>Em andamento</td>
+</tr>
+
+<tr>
+<td>10/03/2026</td>
+<td>Compras</td>
+<td><span class="label label-success">Baixa</span></td>
+<td>Concluído</td>
+</tr>
+
+</table>
+
+</div>
+</div>
+
+<button class="btn btn-default">
+<span class="glyphicon glyphicon-download"></span> Exportar Relatório
+</button>
 
 </div>
 
