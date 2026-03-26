@@ -1,0 +1,29 @@
+.navbar-personalizada {
+    min-height: 50px;
+}
+
+.marca-sistema {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.menu-principal > li > a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.menu-direita {
+    margin-top: 5px;
+}
+
+.botao-novo {
+    margin-top: 5px;
+}
+
+.conteudo-principal {
+    margin-top: 70px;
+}
+
+.painel {
+    margin-bottom: 20px;
+}
