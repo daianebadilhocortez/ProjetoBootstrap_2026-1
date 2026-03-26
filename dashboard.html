@@ -2,53 +2,69 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#menuTopo">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="index.html">Sistema Administrativo</a>
         </div>
-        <ul class="nav navbar-nav">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="listagem.html">Listagem</a></li>
-            <li class="active"><a href="dashboard.html">Painel</a></li>
-        </ul>
+
+        <div class="collapse navbar-collapse" id="menuTopo">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="listagem.html">Listagem</a></li>
+                <li class="active"><a href="dashboard.html">Painel</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 
-<div class="container">
+<div class="container" style="margin-top:70px;">
+
     <h2>Painel</h2>
 
     <div class="row">
 
         <div class="col-md-4">
             <div class="panel panel-primary">
-                <div class="panel-heading">Usuários</div>
-                <div class="panel-body">120</div>
+                <div class="panel-heading">Total de Usuários</div>
+                <div class="panel-body">
+                    <h3>120</h3>
+                </div>
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="panel panel-success">
-                <div class="panel-heading">Cadastros do mês</div>
-                <div class="panel-body">35</div>
+                <div class="panel-heading">Cadastros do Mês</div>
+                <div class="panel-body">
+                    <h3>35</h3>
+                </div>
             </div>
         </div>
 
         <div class="col-md-4">
-            <div class="panel panel-danger">
+            <div class="panel panel-warning">
                 <div class="panel-heading">Alertas</div>
-                <div class="panel-body">5</div>
+                <div class="panel-body">
+                    <h3>5</h3>
+                </div>
             </div>
         </div>
 
     </div>
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
