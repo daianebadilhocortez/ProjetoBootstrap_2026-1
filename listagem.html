@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Processos</title>
+<title>Processos Administrativos</title>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
@@ -32,18 +32,144 @@
 
 <div class="container-fluid" style="margin-top:70px; padding:20px;">
 
-<input class="form-control" placeholder="Buscar processo"><br>
+<div class="alert alert-info">
+Consulta e acompanhamento dos processos administrativos cadastrados.
+</div>
 
-<table class="table table-striped table-hover">
-<tr><th>Responsável</th><th>Tipo</th><th>Prioridade</th><th>Status</th></tr>
+<div class="row">
 
-<tr><td>João</td><td>Licitação</td><td><span class="label label-danger">Alta</span></td><td>Em análise</td></tr>
-<tr><td>Maria</td><td>RH</td><td><span class="label label-warning">Média</span></td><td>Em andamento</td></tr>
-<tr><td>Ana</td><td>Compras</td><td><span class="label label-success">Baixa</span></td><td>Concluído</td></tr>
-<tr><td>Carlos</td><td>Convênio</td><td><span class="label label-danger">Alta</span></td><td>Pendente</td></tr>
-<tr><td>Lucas</td><td>Licitação</td><td><span class="label label-warning">Média</span></td><td>Em análise</td></tr>
+<div class="col-md-4">
+<input class="form-control" placeholder="Buscar por responsável, tipo ou situação">
+</div>
+
+<div class="col-md-4">
+<select class="form-control">
+<option>Filtrar por tipo de processo</option>
+<option>Licitação</option>
+<option>Convênio</option>
+<option>Recursos Humanos</option>
+<option>Compras Públicas</option>
+</select>
+</div>
+
+<div class="col-md-4 text-right">
+<a href="cadastro.html" class="btn btn-primary">
+<span class="glyphicon glyphicon-plus"></span> Novo Processo
+</a>
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="panel panel-default">
+<div class="panel-heading">Em Análise</div>
+<div class="panel-body">50 processos</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="panel panel-warning">
+<div class="panel-heading">Pendentes</div>
+<div class="panel-body">20 processos</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="panel panel-success">
+<div class="panel-heading">Concluídos</div>
+<div class="panel-body">35 processos</div>
+</div>
+</div>
+
+</div>
+
+<div class="table-responsive">
+
+<table class="table table-striped table-hover table-bordered">
+
+<tr>
+<th>Responsável</th>
+<th>Tipo</th>
+<th>Prioridade</th>
+<th>Situação</th>
+<th>Prazo</th>
+<th>Ações</th>
+</tr>
+
+<tr>
+<td>Secretaria de Administração</td>
+<td>Licitação</td>
+<td><span class="label label-danger">Alta</span></td>
+<td>Em análise jurídica</td>
+<td>05 dias</td>
+<td>
+<button class="btn btn-info btn-xs">Detalhes</button>
+<button class="btn btn-danger btn-xs">Encerrar</button>
+</td>
+</tr>
+
+<tr>
+<td>Secretaria de Saúde</td>
+<td>Convênio</td>
+<td><span class="label label-warning">Média</span></td>
+<td>Aguardando assinatura</td>
+<td>10 dias</td>
+<td>
+<button class="btn btn-info btn-xs">Detalhes</button>
+<button class="btn btn-danger btn-xs">Encerrar</button>
+</td>
+</tr>
+
+<tr>
+<td>Departamento de RH</td>
+<td>Recursos Humanos</td>
+<td><span class="label label-success">Baixa</span></td>
+<td>Concluído</td>
+<td>-</td>
+<td>
+<button class="btn btn-info btn-xs">Detalhes</button>
+</td>
+</tr>
+
+<tr>
+<td>Setor de Compras</td>
+<td>Compras Públicas</td>
+<td><span class="label label-danger">Alta</span></td>
+<td>Em análise técnica</td>
+<td>03 dias</td>
+<td>
+<button class="btn btn-info btn-xs">Detalhes</button>
+<button class="btn btn-danger btn-xs">Encerrar</button>
+</td>
+</tr>
+
+<tr>
+<td>Secretaria de Educação</td>
+<td>Licitação</td>
+<td><span class="label label-warning">Média</span></td>
+<td>Em andamento</td>
+<td>07 dias</td>
+<td>
+<button class="btn btn-info btn-xs">Detalhes</button>
+</td>
+</tr>
 
 </table>
+
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading">Observações</div>
+<div class="panel-body">
+Processos com prioridade alta devem ser analisados com urgência.<br>
+Processos com prazo inferior a 5 dias exigem acompanhamento imediato.<br>
+Processos pendentes dependem de documentação complementar.
+</div>
+</div>
 
 </div>
 
