@@ -6,11 +6,10 @@
     <title>Sistema Administrativo</title>
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top navbar-personalizada">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
 
         <div class="navbar-header">
@@ -20,44 +19,24 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand marca-sistema" href="index.html">
+            <a class="navbar-brand" href="index.html">
                 <span class="glyphicon glyphicon-th"></span> Sistema Administrativo
             </a>
         </div>
 
         <div class="collapse navbar-collapse" id="menuTopo">
 
-            <ul class="nav navbar-nav menu-principal">
-                <li class="active">
-                    <a href="index.html">
-                        <span class="glyphicon glyphicon-home"></span> Início
-                    </a>
-                </li>
-                <li>
-                    <a href="cadastro.html">
-                        <span class="glyphicon glyphicon-user"></span> Cadastro
-                    </a>
-                </li>
-                <li>
-                    <a href="listagem.html">
-                        <span class="glyphicon glyphicon-list"></span> Listagem
-                    </a>
-                </li>
-                <li>
-                    <a href="dashboard.html">
-                        <span class="glyphicon glyphicon-stats"></span> Painel
-                    </a>
-                </li>
-                <li>
-                    <a href="relatorios.html">
-                        <span class="glyphicon glyphicon-file"></span> Relatórios
-                    </a>
-                </li>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Início</a></li>
+                <li><a href="cadastro.html"><span class="glyphicon glyphicon-user"></span> Cadastro</a></li>
+                <li><a href="listagem.html"><span class="glyphicon glyphicon-list"></span> Listagem</a></li>
+                <li><a href="dashboard.html"><span class="glyphicon glyphicon-stats"></span> Painel</a></li>
+                <li><a href="relatorios.html"><span class="glyphicon glyphicon-file"></span> Relatórios</a></li>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right menu-direita">
+            <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="cadastro.html" class="btn btn-primary navbar-btn botao-novo">
+                    <a href="cadastro.html" class="btn btn-primary navbar-btn">
                         <span class="glyphicon glyphicon-plus"></span> Novo
                     </a>
                 </li>
@@ -68,47 +47,57 @@
     </div>
 </nav>
 
-<div class="container-fluid conteudo-principal">
+<div class="container-fluid" style="margin-top: 70px;">
 
     <div class="alert alert-info">
         Bem-vindo ao sistema administrativo
     </div>
 
-    <div class="jumbotron destaque">
+    <div class="jumbotron">
         <h2>Sistema de Gestão</h2>
-        <p>Controle simples de funcionários, setores e processos.</p>
+        <p>Gerencie cadastros, visualize dados e acompanhe indicadores do sistema.</p>
         <p>
-            <a href="cadastro.html" class="btn btn-primary">Ir para cadastro</a>
+            <a href="cadastro.html" class="btn btn-primary btn-lg">Realizar Cadastro</a>
         </p>
     </div>
 
     <div class="row">
 
         <div class="col-md-4">
-            <div class="panel panel-default painel">
-                <div class="panel-heading">Funcionários</div>
-                <div class="panel-body">
-                    Cadastro e controle de funcionários
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-user"></span> Cadastros
                 </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default painel">
-                <div class="panel-heading">Setores</div>
                 <div class="panel-body">
-                    Organização dos setores
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default painel">
-                <div class="panel-heading">Relatórios</div>
-                <div class="panel-body">
-                    Acessar relatórios do sistema
+                    Gerencie os registros cadastrados no sistema de forma simples e organizada.
                     <br><br>
-                    <a href="relatorios.html" class="btn btn-default">Abrir</a>
+                    <a href="cadastro.html" class="btn btn-primary">Acessar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-list"></span> Listagem
+                </div>
+                <div class="panel-body">
+                    Visualize todos os dados cadastrados em formato de tabela responsiva.
+                    <br><br>
+                    <a href="listagem.html" class="btn btn-default">Ver dados</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-stats"></span> Painel
+                </div>
+                <div class="panel-body">
+                    Acompanhe indicadores e métricas importantes do sistema.
+                    <br><br>
+                    <a href="dashboard.html" class="btn btn-default">Abrir painel</a>
                 </div>
             </div>
         </div>
