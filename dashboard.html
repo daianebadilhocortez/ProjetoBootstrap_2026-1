@@ -1,69 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Painel</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<title>Painel Gerencial</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#menuTopo">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Sistema Administrativo</a>
-        </div>
+<div class="container-fluid">
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="collapse" data-target="#menuTopo">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">Gestão Pública</a>
+</div>
 
-        <div class="collapse navbar-collapse" id="menuTopo">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="listagem.html">Listagem</a></li>
-                <li class="active"><a href="dashboard.html">Painel</a></li>
-                <li><a href="relatorios.html">Relatórios</a></li>
-            </ul>
-        </div>
-    </div>
+<div class="collapse navbar-collapse" id="menuTopo">
+<ul class="nav navbar-nav">
+<li><a href="index.html">Início</a></li>
+<li><a href="cadastro.html">Novo Processo</a></li>
+<li><a href="listagem.html">Processos</a></li>
+<li class="active"><a href="dashboard.html">Painel</a></li>
+<li><a href="relatorios.html">Relatórios</a></li>
+</ul>
+</div>
+</div>
 </nav>
 
-<div class="container" style="margin-top:70px;">
+<div class="container-fluid" style="margin-top:70px; padding:20px;">
 
-    <h2>Painel</h2>
+<div class="alert alert-info">
+Painel de acompanhamento dos processos administrativos.
+</div>
 
-    <div class="row">
+<div class="row">
 
-        <div class="col-md-4">
-            <div class="panel panel-primary">
-                <div class="panel-heading">Total de Usuários</div>
-                <div class="panel-body">
-                    <h3>120</h3>
-                </div>
-            </div>
-        </div>
+<div class="col-md-4">
+<div class="panel panel-primary">
+<div class="panel-heading">Processos em Tramitação</div>
+<div class="panel-body"><h3>85</h3></div>
+</div>
+</div>
 
-        <div class="col-md-4">
-            <div class="panel panel-success">
-                <div class="panel-heading">Cadastros do Mês</div>
-                <div class="panel-body">
-                    <h3>35</h3>
-                </div>
-            </div>
-        </div>
+<div class="col-md-4">
+<div class="panel panel-success">
+<div class="panel-heading">Processos Concluídos</div>
+<div class="panel-body"><h3>35</h3></div>
+</div>
+</div>
 
-        <div class="col-md-4">
-            <div class="panel panel-warning">
-                <div class="panel-heading">Alertas</div>
-                <div class="panel-body">
-                    <h3>5</h3>
-                </div>
-            </div>
-        </div>
+<div class="col-md-4">
+<div class="panel panel-warning">
+<div class="panel-heading">Processos Pendentes</div>
+<div class="panel-body"><h3>20</h3></div>
+</div>
+</div>
 
-    </div>
+</div>
+
+<div class="row">
+
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-heading">Controle de Prioridade</div>
+<div class="panel-body">
+Alta prioridade: 12<br>
+Média prioridade: 40<br>
+Baixa prioridade: 68
+</div>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-heading">Controle de Prazo</div>
+<div class="panel-body">
+Dentro do prazo: 70<br>
+Próximo do vencimento: 20<br>
+Em atraso: 10
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-12">
+<div class="panel panel-default">
+<div class="panel-heading">Atividades Recentes</div>
+<div class="panel-body">
+Processo nº 102 atualizado<br>
+Novo processo registrado<br>
+Processo nº 089 concluído<br>
+Processo nº 110 em análise
+</div>
+</div>
+</div>
+
+</div>
 
 </div>
 
