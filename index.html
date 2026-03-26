@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Administrativo</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
 
@@ -16,47 +26,39 @@
         <div class="collapse navbar-collapse" id="menuTopo">
 
             <ul class="nav navbar-nav">
-
                 <li class="active">
                     <a href="index.html">
                         <span class="glyphicon glyphicon-home"></span> Início
                     </a>
                 </li>
-
                 <li>
                     <a href="cadastro.html">
                         <span class="glyphicon glyphicon-user"></span> Cadastro
                     </a>
                 </li>
-
                 <li>
                     <a href="listagem.html">
                         <span class="glyphicon glyphicon-list"></span> Listagem
                     </a>
                 </li>
-
                 <li>
                     <a href="dashboard.html">
                         <span class="glyphicon glyphicon-stats"></span> Painel
                     </a>
                 </li>
-
                 <li>
                     <a href="relatorios.html">
                         <span class="glyphicon glyphicon-file"></span> Relatórios
                     </a>
                 </li>
-
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-
                 <li>
                     <a href="cadastro.html" class="btn btn-primary navbar-btn">
                         <span class="glyphicon glyphicon-plus"></span> Novo
                     </a>
                 </li>
-
             </ul>
 
         </div>
@@ -64,4 +66,57 @@
     </div>
 </nav>
 
-<div style="margin-top: 70px;"></div>
+<div class="container-fluid">
+
+    <div class="alert alert-info">
+        Bem-vindo ao sistema administrativo
+    </div>
+
+    <div class="jumbotron">
+        <h2>Sistema de Gestão</h2>
+        <p>Controle simples de funcionários, setores e processos.</p>
+        <p>
+            <a href="cadastro.html" class="btn btn-primary">Ir para cadastro</a>
+        </p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">Funcionários</div>
+                <div class="panel-body">
+                    Cadastro e controle de funcionários
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">Setores</div>
+                <div class="panel-body">
+                    Organização dos setores
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">Relatórios</div>
+                <div class="panel-body">
+                    Acessar relatórios do sistema
+                    <br><br>
+                    <a href="relatorios.html" class="btn btn-default">Abrir</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
