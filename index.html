@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Administrativo</title>
+
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-personalizada">
     <div class="container-fluid">
 
         <div class="navbar-header">
@@ -18,14 +20,14 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand marca-sistema" href="index.html">
                 <span class="glyphicon glyphicon-th"></span> Sistema Administrativo
             </a>
         </div>
 
         <div class="collapse navbar-collapse" id="menuTopo">
 
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav menu-principal">
                 <li class="active">
                     <a href="index.html">
                         <span class="glyphicon glyphicon-home"></span> Início
@@ -53,9 +55,9 @@
                 </li>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right menu-direita">
                 <li>
-                    <a href="cadastro.html" class="btn btn-primary navbar-btn">
+                    <a href="cadastro.html" class="btn btn-primary navbar-btn botao-novo">
                         <span class="glyphicon glyphicon-plus"></span> Novo
                     </a>
                 </li>
@@ -66,13 +68,13 @@
     </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid conteudo-principal">
 
     <div class="alert alert-info">
         Bem-vindo ao sistema administrativo
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron destaque">
         <h2>Sistema de Gestão</h2>
         <p>Controle simples de funcionários, setores e processos.</p>
         <p>
@@ -83,7 +85,7 @@
     <div class="row">
 
         <div class="col-md-4">
-            <div class="panel panel-default">
+            <div class="panel panel-default painel">
                 <div class="panel-heading">Funcionários</div>
                 <div class="panel-body">
                     Cadastro e controle de funcionários
@@ -92,7 +94,7 @@
         </div>
 
         <div class="col-md-4">
-            <div class="panel panel-default">
+            <div class="panel panel-default painel">
                 <div class="panel-heading">Setores</div>
                 <div class="panel-body">
                     Organização dos setores
@@ -101,7 +103,7 @@
         </div>
 
         <div class="col-md-4">
-            <div class="panel panel-default">
+            <div class="panel panel-default painel">
                 <div class="panel-heading">Relatórios</div>
                 <div class="panel-body">
                     Acessar relatórios do sistema
