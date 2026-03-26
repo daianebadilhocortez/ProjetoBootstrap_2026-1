@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<title>Novo Processo</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuTopo">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Sistema Administrativo</a>
-        </div>
+<div class="container-fluid">
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="collapse" data-target="#menuTopo">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">Gestão Pública</a>
+</div>
 
-        <div class="collapse navbar-collapse" id="menuTopo">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Início</a></li>
-                <li class="active"><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="listagem.html">Listagem</a></li>
-                <li><a href="dashboard.html">Painel</a></li>
-                <li><a href="relatorios.html">Relatórios</a></li>
-            </ul>
-        </div>
-    </div>
+<div class="collapse navbar-collapse" id="menuTopo">
+<ul class="nav navbar-nav">
+<li><a href="index.html">Início</a></li>
+<li class="active"><a href="cadastro.html">Novo Processo</a></li>
+<li><a href="listagem.html">Processos</a></li>
+<li><a href="dashboard.html">Painel</a></li>
+<li><a href="relatorios.html">Relatórios</a></li>
+</ul>
+</div>
+</div>
 </nav>
 
-<div class="container" style="margin-top:70px;">
+<div class="container-fluid" style="margin-top:70px; padding:20px;">
 
-    <h2>Cadastro</h2>
+<div class="panel panel-info">
+<div class="panel-heading">Cadastro de Processo Administrativo</div>
+<div class="panel-body">
+Registro de novos processos com definição de prioridade e controle de prazos.
+</div>
+</div>
 
-    <form>
-        <div class="row">
-            <div class="col-md-6">
-                <label>Nome</label>
-                <input type="text" class="form-control" placeholder="Digite o nome">
-            </div>
+<form>
 
-            <div class="col-md-6">
-                <label>Email</label>
-                <input type="email" class="form-control" placeholder="Digite o email">
-            </div>
-        </div>
+<div class="form-group">
+<label>Unidade Responsável</label>
+<input type="text" class="form-control" placeholder="Ex: Secretaria de Administração">
+</div>
 
-        <br>
+<div class="form-group">
+<label>Email Institucional</label>
+<input type="email" class="form-control" placeholder="email@orgao.gov.br">
+</div>
 
-        <div class="form-group">
-            <label>Tipo</label>
-            <select class="form-control">
-                <option>Selecione</option>
-                <option>Funcionário</option>
-                <option>Cliente</option>
-            </select>
-        </div>
+<div class="form-group">
+<label>Tipo de Processo</label>
+<select class="form-control">
+<option>Selecione</option>
+<option>Licitação</option>
+<option>Convênio</option>
+<option>RH</option>
+<option>Compras</option>
+</select>
+</div>
 
-        <div class="form-group">
-            <label>Descrição</label>
-            <textarea class="form-control" rows="3"></textarea>
-        </div>
+<div class="form-group">
+<label>Prioridade</label>
+<select class="form-control">
+<option>Baixa</option>
+<option>Média</option>
+<option>Alta</option>
+</select>
+</div>
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSucesso">
-            Enviar
-        </button>
-    </form>
+<div class="form-group">
+<label>Descrição</label>
+<textarea class="form-control"></textarea>
+</div>
+
+<button class="btn btn-primary" data-toggle="modal" data-target="#modal">Registrar</button>
+
+</form>
 
 </div>
 
-<div class="modal fade" id="modalSucesso">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4>Confirmação</h4>
-            </div>
-            <div class="modal-body">
-                Cadastro realizado com sucesso.
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-success" data-dismiss="modal">OK</button>
-            </div>
-        </div>
-    </div>
+<div class="modal fade" id="modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">Processo registrado com sucesso.</div>
+<div class="modal-footer">
+<button class="btn btn-success" data-dismiss="modal">OK</button>
+</div>
+</div>
+</div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
